@@ -1,0 +1,22 @@
+package cleancode;
+
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		double p,t,r;
+		System.out.println("Enter ammount");
+		p = sc.nextDouble();
+		System.out.println("Enter Time");
+		t = sc.nextDouble();
+		System.out.println("Enter Interest");
+		r = sc.nextDouble();
+		Interest ob = new Interest();
+		System.out.println("simple interest is "+ob.simpleinterest(p,t,r));
+		System.out.println("compound interest is "+ob.compoundinterest(p,t,r));
+
+	}
+}
